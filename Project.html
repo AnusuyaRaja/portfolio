@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #a8edea, #fed6e3); /* Gradient background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            backdrop-filter: blur(10px); /* Apply blur effect */
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 30px;
+            max-width: 800px;
+            width: 90%;
+            margin-top: 40px;
+            color: #333; /* Dark gray text */
+            display: flex; /* Flexbox container */
+            flex-direction: column; /* Stack items vertically */
+        }
+
+        .content {
+            flex: 1; /* Take up remaining space */
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #333; /* Dark gray */
+        }
+
+        .project {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .project:hover {
+            background-color: #f9f9f9; /* Light gray background on hover */
+            transform: translateY(-5px); /* Move the element up slightly */
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            color: #333; /* Dark gray */
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #666; /* Medium gray text */
+        }
+
+        .image {
+            align-self: flex-end; /* Align image to the end of the container */
+            margin-top: 20px; /* Margin for spacing */
+        }
+
+        .image img {
+            width: 100%; /* Full width within the container */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .nav-buttons a {
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #575757;
+        }
+
+        .nav-buttons .next {
+            background-color: #333;
+            color: white;
+        }
+
+        .nav-buttons .previous {
+            background-color: #444;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Projects</h1>
+            <center>
+            <div class="image">
+                <img src="https://www.shutterstock.com/image-vector/composition-group-managers-employees-office-600nw-1363147607.jpg" alt="Image">
+            </div>
+        </center>
+            <div class="project">
+                <h2>Career Guidance</h2>
+                <p>This project focuses on helping beginners develop their communication skills at KONGU ENGINEERING COLLEGE PERUNDURAI during the QUANTUM FEST-2K23.</p>
+            </div>
+
+            <div class="project">
+                <h2>Computer Coaching Institute Management System</h2>
+                <p>This consultancy project involves designing a Management System for Computer Coaching Institutes. It aims to simplify the maintenance of student and course records.</p>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="about.html" class="previous">&#8592; Previous</a>
+            <a href="EXPERIENCE.html" class="next">Next &#8594;</a>
+        </div>
+    </div>
+</body>
+
+</html>

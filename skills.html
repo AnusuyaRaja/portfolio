@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 40px;
+            max-width: 800px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .section-center {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #343a40;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .skill-item {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            width: 200px;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+        }
+
+        .skill-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .skill-item h3 {
+            color: #343a40;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .skill-item p {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 0;
+        }
+
+        .skill-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .skill-item:hover::before {
+            opacity: 1;
+        }
+
+        .skill-item:hover img {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 600px) {
+            .skills-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skill-item {
+                margin: 10px 0;
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="section-center">
+            <h1>MY SKILLS</h1>
+        </div>
+        <div class="skills-list">
+            <div class="skill-item">
+                <img src="https://verpex.com/assets/uploads/images/blog/Free-HTML-Editors.webp?v=1695388726" alt="HTML">
+                <h3>HTML5</h3>
+                <p>Advanced</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://wwwcdn.cincopa.com/helpres/wp-content/uploads/2019/08/504266-636924000532723800-16x9.jpg" alt="CSS">
+                <h3>CSS3</h3>
+                <p>Intermediate</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://w0.peakpx.com/wallpaper/503/758/HD-wallpaper-java-metal-logo-grunge-programming-language-signs-blue-metal-background-java-creative-programming-language-java-logo.jpg" alt="Java">
+                <h3>Java</h3>
+                <p>Beginner</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

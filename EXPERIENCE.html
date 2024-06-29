@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #a8edea, #fed6e3); /* New gradient colors */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 40px;
+            max-width: 900px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        .content {
+            flex: 1;
+            width: 100%;
+        }
+
+        .image {
+            flex: 1;
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-center {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #343a40;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .experience-item {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .experience-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-item h2 {
+            color: #343a40;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .experience-item p {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 0.5em;
+        }
+
+        .experience-item strong {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .underline {
+            width: 50px;
+            height: 4px;
+            background-color: #343a40;
+            margin: 0 auto 30px;
+            border-radius: 2px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .nav-buttons a {
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+            color: #fff;
+        }
+
+        .nav-buttons .previous {
+            background-color: #333;
+        }
+
+        .nav-buttons .next {
+            background-color: #333;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #575757;
+        }
+
+        @media (min-width: 601px) {
+            section {
+                flex-direction: row;
+            }
+
+            .image {
+                margin-top: 0;
+                margin-left: 20px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            section {
+                text-align: center;
+            }
+
+            .image {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="content">
+            <div class="section-center">
+                <h1>EXPERIENCE</h1>
+                <div class="underline"></div>
+            </div>
+            <div class="experience-item">
+                <h2>INTERNSHIP</h2>
+                <h2>COMPANY: <b>SOFTYUGA</b></h2>
+                <p><strong>LOCATION: COIMBATORE</strong></p>
+                <p>I have done an Internship Project for Agriculture Emporium. The design of the Agriculture product selling management system is based on the agriculture product which will simply maintaining the records of Customer and Buyer.</p>
+            </div>
+            
+        </div>
+        <div class="image">
+            <img src="https://img.freepik.com/premium-vector/experience-concept-mother-took-her-son-daughter-out-play-outside-cartoon-character-design-flat-style_1362-142.jpg" alt="Experience">
+            <div class="nav-buttons">
+                <a href="Project.html" class="previous">&#8592; Previous</a>
+                <a href="education.html" class="next">Next &#8594;</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
